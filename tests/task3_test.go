@@ -17,6 +17,7 @@ func Test_MultipleEachSlcieElements(t *testing.T) {
 		{"2", []int{0, 5, 10, 15}, -1, []int{0, -5, -10, -15}},
 	}
 
+	t.Parallel()
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got := MultipleEachSliceElements(tt.slice, tt.multiplier)

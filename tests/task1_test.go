@@ -13,7 +13,7 @@ func Test_PositivePow(t *testing.T) {
 		{"2", 2, 10, 1024},
 		{"3", 3, 4, 81},
 	}
-
+	t.Parallel()
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			got := PositivePow(tt.number, tt.degree)
