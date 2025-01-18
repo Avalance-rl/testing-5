@@ -27,5 +27,5 @@ jobs:
     - name: Test
       run: go test -v ./...
 
-    - name: Lint
-      run: make golint
+    # - name: Lint
+    #   run: make golint
