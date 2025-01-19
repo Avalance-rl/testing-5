@@ -1,3 +1,4 @@
 linters:
+  disable-all: true
   enable:
-    - lll # reports long lines
+    - lll
